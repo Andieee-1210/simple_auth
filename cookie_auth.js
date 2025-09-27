@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Connect to MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/cookieApp")
+mongoose.connect("mongodb://localhost:27017/cookieApp")
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.error(err));
 
